@@ -1,0 +1,46 @@
+.col-12{
+    display: flex;
+    margin: 20px;
+}
+.container-info {
+    justify-content: center;
+    align-items: center;
+  &__img {
+      width: 500px;
+      height: auto;
+  }
+  &__p1 {
+      font-size: $fs-x-large;
+      font-weight: $fw-bold;
+      margin: 0;
+      width: 250px;
+  }
+  &__p2 {
+      color: $color-granite-gray;
+      width: 250px;
+  }
+}
+
+@include desktop-view{
+    .col-12{
+        display: flex;
+        margin: 0;
+    }
+    .container-info{
+        &__img {
+            width: 250px;
+            height: auto;
+        }
+        &__p1 {
+            font-size: $fs-medium;
+            font-weight: $fw-bold;
+            margin: 0;
+            width: auto;
+        }
+        &__p2 {
+            color: $color-granite-gray;
+            font-size: $fs-x-small;
+        }
+    }
+}
+

@@ -1,0 +1,18 @@
+
+@mixin cell-view {
+    @media screen and (min-width: $min-cell) {
+        @content;
+    }
+}
+
+@mixin tablet-view {
+    @media screen and (min-width: $min-tablet) {
+        @content;
+    }
+}
+
+@mixin desktop-view {
+    @media screen and (min-width: $min-desktop) {
+        @content;
+    }
+}
